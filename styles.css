@@ -3,6 +3,9 @@ html {
     background-image: url(dark.jpg);
     background-size:inherit;
 }
+body {
+    border: 1px solid white;
+}
 #head {
     display: flex;
     flex-direction: row;
@@ -11,19 +14,22 @@ html {
     justify-content: center;
 }
 #sidebar {
-    position: fixed;
+    position: relative;
+    left: 70%;
+    width: 30%;
     display: flex;
-    align-items: center;
-    right: 20px;
+    justify-content: space-evenly;
     top: 10%;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
 }
 
 #sidebar > a {
     margin: 10px;
-    color: white;
+    color: black;
 }
 #sidebar > a:hover{
-    color: red;
+    color: darkred;
 }
 @media (min-width: 701px) {
     .submission {
@@ -41,9 +47,10 @@ html {
 @media (max-width: 700px) {
     #sidebar {
         display: flex;
-        justify-content: center;
+        left: 0;
+        width: 100%;
+        justify-content: space-evenly;
         align-items: center;
-        position: relative;
         transition-duration: 0.5s;
     }
     form {
@@ -69,7 +76,6 @@ html {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 

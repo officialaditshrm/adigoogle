@@ -18,6 +18,10 @@ h3 {
     margin: 10px 0px 5px;
     color: black;
 }
+#sidebar {
+    border-radius: 10px;
+    background-color: rgba(135, 207, 235, 0.612);
+}
 #sidebar > a {
     margin: 10px;
     color: darkblue;
@@ -54,12 +58,15 @@ form {
 }
 @media (min-width: 901px) {
     #sidebar {
-        position: absolute;
+        position: relative;
         display: flex;
         align-items: center;
+        text-align: center;
         justify-content: space-evenly;
+        left: 80%;
         right: 20px;
         top: 10%;
+        width: 20%;
     }
     .field {
         margin: 30px;
