@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href = "stylesadvanced.css">
+        <title>Advanced Search</title>
+    </head>
+    <body>
+        <div id = "sidebar">
+            <a href = "index.html" target = "_blank">Search</a>
+            <a href = "image.html" target = "_blank">Images</a>
+        </div>
+        <div id = "main">
+            <h1>Google</h1>
+            <h2>Advanced Search</h2>
+            <form action="https://www.google.com/search">
+                <h3>Find pages with...</h3>
+                <div class = "field">
+                    <div class = "label">
+                        <label>all these words:</label>
+                    </div>
+                    <div class = "textbox">
+                        <input class = "normal" type="text" name="as_q">
+                    </div>
+                    
+                </div>
+                <div class = "field">
+                    <div class = "label">
+                        <label>this exact word or phrase:</label>
+                    </div>
+                    <div class = "textbox">
+                        <input class = "normal" type="text" name="as_epq">
+                    </div>
+                    
+                </div>
+                <div class = "field">
+                    <div class = "label">
+                        <label>any of these words:</label>
+                    </div>
+                    <div class = "textbox">
+                        <input class = "normal" type="text" name="as_oq">
+                    </div>
+                </div>
+                <div class = "field">
+                    <div class = "label">
+                        <label>none of these words:</label>
+                    </div>
+                    <div class = "textbox">
+                        <input class = "normal" type="text" name="as_eq">
+                    </div>
+                </div>
+                <div class = "field">
+                    <div class = "label">
+                        <label>numbers ranging from:</label>
+                    </div>
+                    <div class = "textbox">
+                        <div class = "numlock">
+                            <input class = "num" type="number" name="as_nlo">
+                        </div>
+                        <label>to</label>
+                        <div class = "numlock">
+                            <input class = "num" type="number" name="as_nhi">
+                        </div>
+                    </div>
+                </div>
+                <input class = "submission" type="submit" value="Advanced Search">
+            </form>
+        </div>
+    </body>
+</html>
