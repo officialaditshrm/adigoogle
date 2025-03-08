@@ -3,9 +3,6 @@ html {
     background-image: url(dark.jpg);
     background-size:inherit;
 }
-body {
-    border: 1px solid white;
-}
 #head {
     display: flex;
     flex-direction: row;
